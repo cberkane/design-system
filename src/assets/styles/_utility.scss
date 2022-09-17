@@ -1,0 +1,15 @@
+.container {
+  width: 80%;
+  padding-inline: 2em;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}

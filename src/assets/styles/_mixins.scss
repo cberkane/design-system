@@ -1,0 +1,55 @@
+@import './variables';
+
+@mixin font-size($size) {
+  @if $size == 200 {
+    font-size: $fs-200;
+    line-height: $lh-small;
+  }
+  @if $size == 300 {
+    font-size: $fs-300;
+    line-height: $lh-small;
+  }
+  @if $size == 400 {
+    font-size: $fs-400;
+    line-height: $lh-small;
+  }
+  @if $size == 500 {
+    font-size: $fs-500;
+    line-height: $lh-small;
+  }
+  @if $size == 600 {
+    font-size: $fs-600;
+    line-height: $lh-large;
+  }
+  @if $size == 700 {
+    font-size: $fs-700;
+    line-height: $lh-large;
+  }
+  @if $size == 800 {
+    font-size: $fs-800;
+    line-height: $lh-large;
+  }
+  @if $size == 900 {
+    font-size: $fs-900;
+    line-height: $lh-large;
+  }
+}
+
+@mixin numbered-title($number) {
+  text-transform: uppercase;
+  font-size: $fs-500;
+  font-family: sans-serif;
+
+  &::before {
+    content: $number;
+    display: inline-block;
+    padding-inline: 10px;
+    color: rgba($color-white, 0.2);
+  }
+}
+
+@mixin flow {
+  > * + * {
+    margin-top: 1rem;
+  }
+}
