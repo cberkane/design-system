@@ -1,0 +1,11 @@
+<nav>
+  <ul class="flex">
+    <li
+      *ngFor="let navlink of navlinks"
+      [routerLink]="navlink.path"
+      routerLinkActive="active"
+    >
+      {{ navlink.label }}
+    </li>
+  </ul>
+</nav>
